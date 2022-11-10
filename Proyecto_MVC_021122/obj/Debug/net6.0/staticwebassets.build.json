@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "3QdzWK8Q8PShc24yzJ9fVQReIXAC4MHbh/C3aSwXP2g=",
+  "Hash": "DdaFd1/WdIHuaDsEpDW9zY6WS+EqUTxavOGdgF/RBxo=",
   "Source": "Proyecto_MVC_021122",
   "BasePath": "_content/Proyecto_MVC_021122",
   "Mode": "Default",
@@ -1103,6 +1103,23 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\favicon.ico"
+    },
+    {
+      "Identity": "C:\\Users\\Jessica\\source\\repos\\Proyecto_MVC_021122\\Proyecto_MVC_021122\\wwwroot\\images\\icons\\logo-google.png",
+      "SourceId": "Proyecto_MVC_021122",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\Jessica\\source\\repos\\Proyecto_MVC_021122\\Proyecto_MVC_021122\\wwwroot\\",
+      "BasePath": "_content/Proyecto_MVC_021122",
+      "RelativePath": "images/icons/logo-google.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\images\\icons\\logo-google.png"
     },
     {
       "Identity": "C:\\Users\\Jessica\\source\\repos\\Proyecto_MVC_021122\\Proyecto_MVC_021122\\wwwroot\\js\\site.js",

@@ -78,32 +78,46 @@ else
 
 app.UseHttpsRedirection();
 app.UseStaticFiles();
-
 app.UseRouting();
 app.UseAuthentication();;
 
 app.UseAuthorization();
 
-/*app.MapControllerRoute(
-    name: "default",
-    pattern: "{controller=Home}/{action=Index}/{id?}");*/
-
-//app.UseEndpoints
+/*
 app.UseEndpoints(endpoints =>
 {
     endpoints.MapControllerRoute(
         name: "Default",
         pattern: "{controller=Home}/{action=Index}/{id?}");
-    endpoints.MapAreaControllerRoute("Usuarios", "Usuario", "{controller=Home}/{action=Index}/{id?}");
-    endpoints.MapAreaControllerRoute("Usuarios", "Usuario", "{controller=Usuario}/{action=Usuario}/{id?}");
-    //endpoints.MapAreaControllerRoute("areas", "areas", "{area:exists}/{controller=Home}/{action=Index}/{id?}");
+    //endpoints.MapAreaControllerRoute("Proyecto_MVC_021122", "Usuario", "{controller=Usuario}/{action=Usuario}/{id?}");
+    //endpoints.MapAreaControllerRoute("Proyecto_MVC_021122", "Usuario", "{area:exists}/{controller=Home}/{action=Index}/{id?}");
+    endpoints.MapControllerRoute(
+           name: "areas",
+           pattern: "{area}/{controller}/{did?}/{action=Index}/{id?}");
 });
-// Entity
+*/
+
 app.UseEndpoints(endpoints =>
 {
+    //endpoints.MapDefaultControllerRoute().RequireAuthorization();
     endpoints.MapControllerRoute(
       name: "areas",
       pattern: "{area:exists}/{controller=Home}/{action=Index}/{id?}"
     );
+    endpoints.MapControllerRoute(
+      name: "areas",
+      pattern: "{controller=Home}/{action=Index}/{id?}"
+    );
+
+    endpoints.MapRazorPages();// Configuracion de acceso a paginas de areas
 });
+/*app.UseEndpoints(endpoints =>
+    {
+        
+    });*/
+/*
+app.MapControllerRoute(
+    name: "default",
+    pattern: "{controller=Home}/{action=Index}/{id?}");
+*/
 app.Run();
